@@ -38,7 +38,6 @@ class ImageProcessorApp:
         btn(0, 0, "Input Gambar", self.controller.load_image)
         btn(0, 1, "Grayscale", self.controller.to_grayscale)
         btn(0, 2, "Biner", self.controller.to_binary)
-        btn(0, 3, "Negatif", self.controller.to_negative)
 
         btn(1, 0, "Penjumlahan +", self.controller.arit_add)
         btn(1, 1, "OR", self.controller.logic_or)
