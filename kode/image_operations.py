@@ -11,10 +11,6 @@ class ImageOpsCustom:
         gray = ImageOps.grayscale(img)
         return gray.point(lambda x: 255 if x > 128 else 0)
 
-    def to_negative(self, img):
-        arr = np.array(img)
-        return Image.fromarray(255 - arr)
-
     def arit_add(self, img): return self._apply_arit(img, lambda x: x + 50)
 
     def _apply_arit(self, img, func):
