@@ -23,7 +23,6 @@ class Controller:
 
     def to_grayscale(self): self._apply(self.ops.to_grayscale)
     def to_binary(self): self._apply(self.ops.to_binary)
-    def to_negative(self): self._apply(self.ops.to_negative)
     def arit_add(self): self._apply(self.ops.arit_add)
     def logic_or(self): self._apply(self.ops.logic_or)
 
